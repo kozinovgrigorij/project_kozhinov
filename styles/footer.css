@@ -1,0 +1,15 @@
+/*----------------------------------------------------
+        Стилизация <footer>
+----------------------------------------------------*/
+footer {
+    background-color: #333;
+    color: #f8f7f7;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.footer__content{
+    width: 70vw;
+    margin: 0 auto; 
+}

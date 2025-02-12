@@ -1,0 +1,91 @@
+/*----------------------------------------------------
+        Стилизация <header>
+----------------------------------------------------*/
+
+.header {
+text-align: left;
+    background-color: rgba(26, 24, 24, 0.904);
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    padding: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+  
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-right: 20px;
+    max-width: 100px;
+    height: auto;
+    
+}
+
+.header__content h1 {
+    font-family: 'Uncage', 'Times New Roman', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    text-shadow: 0 1px 2px rgb(179, 218, 7);
+}
+
+.header__nav {
+    position: left;
+    background-color: #88960d;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgb(27, 197, 75);
+}
+
+.header__nav a {
+    position: left;
+    text-align: left;
+    font-family: 'Uncage', Arial, sans-serif;
+    font-size: 1em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+}
+
+.header__nav a:hover {
+    color: #853805;
+}
+
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        margin: 10px 0;
+    }
+
+    .header__buttons {
+        justify-content: center;
+    }
+
+    .actions__video_text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions__video {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .actions__comp_text {
+        max-width: 100%;
+    }
+}
